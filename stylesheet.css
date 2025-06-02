@@ -1,0 +1,142 @@
+/*---Base format mobile (375px)---*/
+
+@font-face {
+  font-family: "Figtree";
+  src: url("font/Figtree-Medium.woff2") format("woff2"),
+    url("font/Figtree-Medium.woff") format("woff"),
+    url("font/Figtree-Medium.ttf") format("ttf");
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Figtree";
+  src: url("font/Figtree-ExtraBold.woff2") format("woff2"),
+    url("font/Figtree-ExtraBold.woff") format("woff"),
+    url("font/Figtree-ExtraBold.ttf") format("ttf");
+  font-weight: 800;
+  font-display: swap;
+}
+body {
+  font-family: "Figtree", sans-serif;
+  display: grid;
+  place-items: center;
+  grid-template-rows: 1fr;
+  height: 100vh;
+  background-color: #f4d04e;
+}
+article {
+  padding: 0;
+}
+.card {
+  width: 327px;
+  height: 501px;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 8px 8px 0 0 black;
+}
+img {
+  display: inline-block;
+  width: 279px;
+  height: 200px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.info {
+  width: 279px;
+  height: 173px;
+  margin: 24px 0 24px 0;
+}
+.box {
+  width: 73px;
+  height: 26px;
+  background-color: #f4d04e;
+  font-size: 12px;
+  line-height: 150%;
+  color: #111;
+  font-weight: 800;
+  text-align: center;
+  padding: 4px 12px 4px 12px;
+  margin: 0;
+  border-radius: 4px;
+}
+.date {
+  font-size: 12px;
+  line-height: 150%;
+  font-weight: 500;
+  color: #111;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+h1 {
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 150%;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+.presentation {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 150%;
+  color: #6b6b6b;
+  margin: 0;
+}
+.author {
+  width: 129px;
+  height: 32px;
+  display: flex;
+}
+.author-photo {
+  width: 32px;
+  height: 32px;
+  display: block;
+}
+.author-name {
+  margin: auto 0 auto auto;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 150%;
+  color: #111;
+}
+h1:hover {
+  color: #f4d04e;
+  cursor: pointer;
+}
+h1:active {
+  transform: translateY(2px);
+}
+h1:focus-visible {
+  outline: 2px solid #0056b3;
+}
+
+/*---Desktop (1440px)---*/
+
+@media screen and (min-width: 1440px) {
+  .card {
+    width: 384px;
+    height: 522px;
+  }
+  img {
+    width: 336px;
+    height: 200px;
+  }
+  .info {
+    width: 336px;
+    height: 194px;
+  }
+  .box {
+    width: 82px;
+    height: 29px;
+    font-size: 14px;
+  }
+  .date {
+    font-size: 14px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  .presentation {
+    font-size: 16px;
+  }
+}
